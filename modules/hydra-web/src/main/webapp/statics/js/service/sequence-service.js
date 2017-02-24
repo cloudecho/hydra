@@ -59,7 +59,7 @@ angular.module('hydra.services.sequence', [])
                         }else {
                             //按照自己前一个兄弟span的时间处理
                             var myBrother = myParent.children[index - 1];
-                            anMap['cs'] = myBrother['cr'];
+                            anMap['cs'] = myBrother.anMap['cr'];
                         }
                     }
                     anMap['cr'] = parseInt(anMap['cs']) + parseInt(span.durationClient)
@@ -77,6 +77,7 @@ angular.module('hydra.services.sequence', [])
                         type: 'used',
                         hasEx : span.exception?true:false
                     }
+                    //console.log("anMap['cs']=",anMap['cs'],"    ","span.durationServer=", span.durationServer);
                     span.wasted = {
                         spanId: span.id,
                         start: parseInt(anMap['cs']) + parseInt(span.durationServer),
