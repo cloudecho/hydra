@@ -21,7 +21,7 @@
     <div>
         <ul class="nav nav-pills myNavbar">
             <li>
-                <a href="">首页</a>
+                <a href="/">首页</a>
             </li>
             <li class="active">
                 <a href="">查询</a>

@@ -52,4 +52,6 @@
             <artifactId>log4j</artifactId>
         </dependency>
     </dependencies>
+    <description>使用MySQL存储元数据。
+如果使用Mongodb，见hydra-store/hydra-mongodb模块</description>
 </project>
