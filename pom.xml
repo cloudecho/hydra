@@ -113,6 +113,7 @@
 		<module>modules/hydra-store</module>
 		<module>modules/hydra-manager-db</module>
 		<module>modules/hydra-test</module>
+		<module>modules/hydra-manager-mongodb</module>
 	</modules>
 
 	<properties>
