@@ -1,5 +1,6 @@
 package com.jd.bdp.hydra.agent.support;
 
+import com.alibaba.dubbo.common.utils.ConfigUtils;
 import com.jd.bdp.hydra.Span;
 import com.jd.bdp.hydra.agent.SyncTransfer;
 import org.slf4j.Logger;
@@ -57,8 +58,7 @@ public class DefaultSyncTransfer implements SyncTransfer {
 
     @Override
     public String appName() {
-        //fixme
-        return "test";
+        return ConfigUtils.getProperty("dubbo.application.name");
     }
 
     private class TransferTask extends Thread {

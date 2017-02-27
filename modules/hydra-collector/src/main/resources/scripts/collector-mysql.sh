@@ -63,7 +63,7 @@ function start_server() {
     echo $! > $PID_FILE
     chmod 755 $PID_FILE
 	sleep 1;
-	tail -F $TAIL_FILE
+#	tail -F $TAIL_FILE
 }
 
 function stop_server() {

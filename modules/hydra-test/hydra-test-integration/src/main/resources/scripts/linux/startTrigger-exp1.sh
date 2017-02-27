@@ -1,5 +1,5 @@
 #!/bin/bash
-MAINCLASSNAME="com.jd.bdp.hydra.benchmark.startTrigger.StartTrigger"
+MAINCLASSNAME="com.jd.bdp.hydra.benchmark.exp1.StartTrigger"
 LOGNAME=Trigger1.log
 
 if [ -z "$BASE_DIR" ] ; then

@@ -1,6 +1,10 @@
 #!/bin/bash
+cd `dirname $0`
+WKDIR=`pwd`
+echo "WKDIR: $WKDIR"
+
 JPS_PATTER="Start"
-source ./env.sh
+#source ./env.sh
 function running(){
 	  JAVA_PIDS=`jps | grep $JPS_PATTER | awk '{print $1}'`
 	echo $JAVA_PIDS are exist
@@ -11,8 +15,12 @@ function running(){
 		fi
 }
 function start_server() {
-	echo 暂不支持全部启动 请分别启动
-	exit 1
+	sh startA.sh
+	sleep 5
+	sh startB.sh
+	sleep 5
+	sh startC.sh
+	exit 0
 }
 
 function stop_server() {

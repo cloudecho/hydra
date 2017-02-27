@@ -29,5 +29,5 @@
     <bean id="trigger" class="com.jd.bdp.hydra.benchmark.exp1.support.Trigger">
         <property name="rootService" ref="referenceA"></property>
     </bean>
-
+	<dubbo:monitor protocol="registry"/>
 </beans>
